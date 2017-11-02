@@ -26,11 +26,11 @@ RSpec.describe "The FlightSchool application" do
     expect(last_response.body).to include("Current status of airports")
   end
 
-  it "shows facts about a particular airport" do
-    get "/airports/SFO"
-    expect(last_response).to be_ok
-    expect(last_response.body).to include("San Francisco")
-  end
+#  it "shows facts about a particular airport" do
+#    get "/airports/SFO"
+#    expect(last_response).to be_ok
+#    expect(last_response.body).to include("San Francisco")
+#  end
 
   it "returns a 404 if the airport cannot be found" do
     get "/airports/EDI"
